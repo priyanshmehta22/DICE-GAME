@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DICE GAME</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        margin: none;
+        padding: none;
+      }
+      .container {
+        width: 100%;
+        height: 720px;
+
+        background: linear-gradient(
+          to right,
+          orange 0%,
+          orange 50%,
+          yellow 50%,
+          yellow 100%
+        );
+        text-align: center;
+      }
+
+      .center {
+        width: 200px;
+        height: 100px;
+      }
+      #heading {
+        font-size: 40px;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+
+        position: fixed;
+        left: 43%;
+      }
+      .die {
+        width: 150px;
+        height: 150px;
+        position: fixed;
+        top: 300px;
+        left: 45%;
+      }
+      #p1 {
+        position: fixed;
+        top: 150px;
+        left: 25%;
+      }
+      #p2 {
+        position: fixed;
+        top: 150px;
+        left: 70%;
+      }
+      .roll {
+        width: 100px;
+        height: 50px;
+        border-radius: 4px;
+        background-color: palegreen;
+        color: black;
+        position: fixed;
+        top: 430px;
+        left: 47%;
+      }
+      .hold {
+        width: 100px;
+        height: 50px;
+        border-radius: 4px;
+        background-color: palegreen;
+        color: black;
+        position: fixed;
+        top: 500px;
+        left: 47%;
+      }
+      .scores {
+        height: 150px;
+        width: 150px;
+        background-color: tomato;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+      }
+      #finalscore1 {
+        position: fixed;
+        top: 400px;
+        left: 23.5%;
+      }
+      #finalscore2 {
+        position: fixed;
+        top: 400px;
+        left: 69%;
+      }
+      /* #score1 {
+        position: fixed;
+        top: 500px;
+        left: 23.5%;
+      }
+      #score2 {
+        position: fixed;
+        top: 500px;
+        left: 69%;
+      } */
+      #reset {
+        width: 100px;
+        height: 50px;
+        border-radius: 4px;
+        background-color: rgb(71, 233, 71);
+        color: black;
+        position: fixed;
+        top: 150px;
+        left: 47%;
+      }
+      #image {
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading">DICE GAME 🎲</h1>
+      <button id="reset" class="center">RESET</button>
+      <h2 id="p1">PLAYER 1🙋🏻‍♂️</h2>
+      <p id="finalscore1" class="scores"></p>
+      <h2 id="p2">PLAYER 2🙋🏻</h2>
+      <p id="finalscore2" class="scores"></p>
+      <!-- <p id="score1" class="scores"><br />0</p>
+      <p id="score2" class="scores"><br />0</p> -->
+      <div class="die">
+        <p id="image"></p>
+        <button id="roll" class="roll">ROLL</button>
+        <!-- <button id="hold" class="hold">HOLD</button> -->
+      </div>
+    </div>
+    <script src="dice game.js"></script>
+  </body>
+</html>
